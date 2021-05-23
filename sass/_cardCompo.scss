@@ -1,0 +1,72 @@
+.card {
+  //   background-color: var(--card-background);
+  display: flex;
+  width: 110rem;
+  border-radius: 1rem;
+  @media only screen and (max-width: $bp-medium) {
+    width: 100%;
+    // overflow: hidden;
+    padding: 0 3rem;
+  }
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+
+  &__component-text {
+    background-color: var(--card-background);
+    flex: 0 0 50%;
+    padding: 3.5rem 9rem;
+    border-radius: 1rem 0 0 1rem;
+    @media only screen and (max-width: $bp-medium) {
+      padding: 3.5rem 4rem;
+    }
+    @media only screen and (max-width: $bp-small) {
+      order: 1;
+      border-radius: 0 0 1rem 1rem;
+      text-align: center;
+    }
+  }
+  &__box {
+    // background-color: red;
+    border-radius: 0 1rem 1rem 0;
+    flex: 0 0 50%;
+    background-image: linear-gradient(var(--accent1), var(--accent1)),
+      url("../images/image-header-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    // background-size: cover;
+    @media only screen and (max-width: $bp-small) {
+      border-radius: 1rem 1rem 0 0;
+      background-image: linear-gradient(var(--accent1), var(--accent1)),
+        url("../images/image-header-mobile.jpg");
+    }
+  }
+}
+.list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9rem;
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  &__item {
+    @media only screen and (max-width: $bp-small) {
+      padding: 2rem 0;
+    }
+  }
+  &__smallText {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: var(--stat-headings);
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+}

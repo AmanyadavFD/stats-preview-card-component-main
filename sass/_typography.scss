@@ -1,0 +1,18 @@
+.main__heading {
+  font-size: 3rem;
+  &-span {
+    color: var(--accent);
+  }
+}
+.paragraph {
+  font-size: 1.6rem;
+  color: var(--main-paragraph);
+  margin-top: 4.5rem;
+}
+.secondar-heading {
+  font-size: 2rem;
+}
+.hide__heading {
+  visibility: hidden;
+  padding: 18rem 0;
+}

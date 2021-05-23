@@ -1,0 +1,36 @@
+// Colors
+:root {
+  --main-background: hsl(233, 47%, 7%);
+  --card-background: hsl(244, 38%, 16%);
+  --accent1: rgb(72, 29, 99, 49%);
+  --accent: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --main-paragraph: hsla(0, 0%, 100%, 0.75);
+  --stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+// break-point for responsive
+$bp-medium: 68.75rem;
+$bp-small: 56.25rem; // 900 /16
+// @media only screen and (max-width){
+// }
+// $main-background: red;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 1rem = 10px , 10px / 16px = 62.5%
+}
+body {
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+  color: var(--white);
+}
