@@ -1,4 +1,4 @@
-# Frontend Mentor - Stats preview card component
+# Frontend Mentor - Stats preview card component <a href=" https://amanyadavfd.github.io/stats-preview-card-component-main/">Live link</a>
 
 ![Design preview for the Stats preview card component coding challenge](./design/desktop-preview.jpg)
 
